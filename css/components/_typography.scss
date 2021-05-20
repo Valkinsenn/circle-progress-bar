@@ -1,0 +1,64 @@
+@use '../abstracts/' as a;
+
+/* ====================================
+TYPOGRAPHY
+==================================== */
+
+body {
+  font-family: a.$body-font;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
+  font-family: a.$header-font;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+p {
+  color: #ccc;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 0.15rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* ====================================
+TESTING TEXT
+==================================== */
+
+.number {
+  position: absolute;
+  text-align: center;
+}
+
+.number h2 {
+  font-size: 2.25rem;
+}
+
+.number h2 span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25rem;
+}
+
+.text {
+  padding-top: 1rem;
+}

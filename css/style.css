@@ -1,0 +1,192 @@
+/* ========================================
+IMPORTED FONTS
+======================================== */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+/* ======================================
+BACKGROUNDS
+====================================== */
+@keyframes bg-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.bg {
+  animation-name: bg-fade-in;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  background-position: center;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  position: fixed;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+}
+
+.bg-home {
+  background-image: url("../assets/images/main_bg.jpg");
+}
+
+.bg-blog {
+  background-image: url("../assets/images/blog_bg.jpg");
+}
+
+.bg-post {
+  background-image: url("../assets/images/post_bg.jpg");
+}
+
+.bg-nopage {
+  background-image: url("../assets/images/nopage_bg.jpg");
+}
+
+@font-face {
+  font-family: "Steelfish";
+  src: url("../assets/fonts/steelfish.ttf");
+}
+/* ====================================
+Layout
+==================================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111111;
+  margin: 0;
+  overflow: hidden;
+}
+
+.page-content {
+  background-image: url("../assets/images/blog_bg.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #ffffff00;
+  display: flex;
+  flex-direction: column;
+  overflow: overlay;
+  position: absolute;
+  top: 0;
+  transition: 0.4s color;
+  width: 100vw;
+  height: 100vh;
+}
+
+.page-content:hover {
+  color: #ffffff55;
+}
+
+.progress-box {
+  align-items: center;
+  backdrop-filter: blur(10px);
+  background-color: #aaaaaa55;
+  border-radius: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  max-width: 300px;
+  min-height: 400px;
+  position: relative;
+  width: 100%;
+}
+
+.percent-box {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.percent-box svg {
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  transform: rotate(-90deg);
+}
+
+.percent-box svg circle {
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke-linecap: round;
+  stroke-width: 3px;
+}
+
+.percent-box svg circle:nth-child(1) {
+  stroke: #00aaff22;
+  stroke-dashoffset: 0;
+  stroke-width: 10px;
+}
+
+.percent-box svg circle:nth-child(2) {
+  stroke: #00bbff;
+  stroke-dashoffset: calc(440 - (440 * 55) / 100);
+}
+
+/* ====================================
+TYPOGRAPHY
+==================================== */
+body {
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
+  font-family: "Steelfish", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+p {
+  color: #ccc;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 0.15rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* ====================================
+TESTING TEXT
+==================================== */
+.number {
+  position: absolute;
+  text-align: center;
+}
+
+.number h2 {
+  font-size: 2.25rem;
+}
+
+.number h2 span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25rem;
+}
+
+.text {
+  padding-top: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
