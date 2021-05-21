@@ -22,7 +22,7 @@ body {
   display: flex;
   flex-direction: column;
   overflow: overlay;
-  // padding-top: 5rem;
+  padding: 1rem;
   position: absolute;
   top: 0;
   transition: 0.4s color;
@@ -44,11 +44,14 @@ body {
   backdrop-filter: blur(10px);
   background-color: #aaaaaa55;
   border-radius: 0.3rem;
+  box-shadow: 0 0 30px #00000055;
   display: flex;
   flex-direction: column;
+  height: 100%;
   justify-content: center;
   margin: auto;
-  max-width: 300px;
+  max-height: 500px;
+  max-width: 350px;
   min-height: 400px;
   position: relative;
   width: 100%;

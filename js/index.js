@@ -25,4 +25,4 @@ const percentCounter = number => {
   }, 10)
 }
 
-percentCounter(80)
+percentCounter(57)
